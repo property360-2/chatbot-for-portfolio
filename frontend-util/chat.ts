@@ -1,7 +1,7 @@
 // src/utils/chat.ts
 // Replace BACKEND_URL with your deployed Vercel URL after deployment.
 
-const BACKEND_URL = "https://YOUR-BACKEND.vercel.app";
+const BACKEND_URL = "https://chatbot-for-portfolio.vercel.app";
 
 export interface ChatMessage {
   role: "user" | "assistant";
