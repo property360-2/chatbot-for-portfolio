@@ -30,7 +30,15 @@ A full-stack, enterprise-grade application for SEO generation and metadata synth
 
 ---
 
-## 4. Intelligent Knowledge Base & Document Automation (DocuMind AI) (Fullstack)
+## 4. Autonomous Client Acquisition Scraper & Operations Control Center (Fullstack)
+An autonomous, multi-source lead acquisition pipeline and operations control dashboard that sweeps job listings, rates them with an intelligent LLM intent-scoring engine, and drafts custom pitches in under 2 minutes.
+- **Problem Resolved (Pain Fixed)**: Sifting thousands of listings manually, low-intent "gigs" or spam posts, and outreach fatigue from drafting custom pitch emails.
+- **Details**: Engineered an autonomous lead harvester combining HackerNews REST pulls, Craigslist RSS sweeps, and Google Maps scraper scripts. Integrates Groq AI model synthesis to automatically construct custom high-value pitch drafts inside a multi-tab Streamlit dashboard. Utilizes SQLModel ORM to manage SQLite database transactions and thread-safe callbacks for state preservation.
+- **Tech Stack**: Python 3.12, Playwright (Headless Chromium), Streamlit, SQLModel, SQLite, Groq API (Llama-3-70B).
+
+---
+
+## 5. Intelligent Knowledge Base & Document Automation (DocuMind AI) (Fullstack)
 An intelligent AI-powered document parsing agent and operations dashboard that turns dense business documents into a searchable, interactive knowledge base.
 - **Problem Resolved (Pain Fixed)**: High amount of manual hours spent reading long, dense PDFs and technical documents, and manual data extraction from invoices.
 - **Details**: Integrated Artificial Intelligence to turn dense company PDFs, manuals, and documents into a searchable "Internal Brain" using RAG (Retrieval-Augmented Generation) architectures. Perfect for legal, real estate, or customer service teams who need accurate answers from their archives in seconds.
@@ -38,7 +46,7 @@ An intelligent AI-powered document parsing agent and operations dashboard that t
 
 ---
 
-## 5. Client Management & Progress Tracking Dashboard (Gym Project) (Fullstack)
+## 6. Client Management & Progress Tracking Dashboard (Gym Project) (Fullstack)
 A fully integrated administration and dashboard analytics portal designed to manage memberships, track attendance, and provide detailed operational overhead breakdowns.
 - **Problem Resolved (Pain Fixed)**: Leaked subscription revenue, slow member check-ins, untracked customer logs, and scattered spreadsheet errors.
 - **Details**: Built a secure, database-driven portal that tracks user metrics and performance. Applicable for fitness businesses, personal trainers, or rehab clinics looking to digitize client progress and eliminate paperwork.
@@ -46,7 +54,7 @@ A fully integrated administration and dashboard analytics portal designed to man
 
 ---
 
-## 6. Tagawasak ng Syudad (GameDev)
+## 7. Tagawasak ng Syudad (GameDev)
 An interactive 3D city-destroyer sandbox game running completely in the web browser.
 - **Problem Resolved (Pain Fixed)**: Heavy, sluggish visual code rendering and unoptimized audio engines in web-based games.
 - **Details**: An interactive 3D city-destroyer sandbox running at a locked, buttery-smooth 60FPS. Uses procedural Web Audio and custom canvas graphics, demonstrating extreme rendering optimization without heavy library overhead.
@@ -54,7 +62,7 @@ An interactive 3D city-destroyer sandbox game running completely in the web brow
 
 ---
 
-## 7. Precision Scrollytelling Gallery (Frontend)
+## 8. Precision Scrollytelling Gallery (Frontend)
 An immersive, visual scrolling journey engineered with responsive animations to display high-impact products or narratives.
 - **Problem Resolved (Pain Fixed)**: Low user engagement, boring static layouts, and high drop-offs on static product/explanation pages.
 - **Details**: An immersive visual scrolling journey engineered with responsive animations. Increases user retention by turning complex product mechanics into highly engaging, interactive narrative flows.
@@ -62,7 +70,7 @@ An immersive, visual scrolling journey engineered with responsive animations to 
 
 ---
 
-## 8. Time-Tracking & Resource Allocation Tool (Study Tracker) (Tools)
+## 9. Time-Tracking & Resource Allocation Tool (Study Tracker) (Tools)
 An interactive time-management and resource allocation logging application.
 - **Problem Resolved (Pain Fixed)**: Unproductive learning or working sessions, lack of visual productivity metrics, and untracked hours.
 - **Details**: Developed an interactive time-management application. This system can be adapted for service-based businesses (consultants, contractors, agencies) to track billable hours, monitor project timelines, and optimize team productivity.
@@ -70,7 +78,7 @@ An interactive time-management and resource allocation logging application.
 
 ---
 
-## 9. Mind Map Maker (Tools)
+## 10. Mind Map Maker (Tools)
 A high-response conceptual design canvas built for rapid brainstorming.
 - **Problem Resolved (Pain Fixed)**: Clunky whiteboard tools, slow drawing tools, and loss of raw brainstorm ideas on browser refresh or crash.
 - **Details**: A high-response conceptual design canvas built for rapid brainstorming. Keeps state persistently stored locally in real-time, preventing loss of intellectual property during offline sessions.
@@ -78,7 +86,7 @@ A high-response conceptual design canvas built for rapid brainstorming.
 
 ---
 
-## 10. Solar System (Frontend)
+## 11. Solar System (Frontend)
 An immersive, interactive space exploration educational platform.
 - **Problem Resolved (Pain Fixed)**: Sluggish, CPU-heavy rendering and unoptimized asset delivery on educational web interactives.
 - **Details**: Combines fluid procedural SVG paths with CSS-only animations to achieve flawless performance on low-end mobile hardware.

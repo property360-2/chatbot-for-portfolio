@@ -16,11 +16,11 @@ How it fits into the broader system: Loaded by the serverless function to supply
 ## Backend & API Development
 - **Node.js**: Node.js, Express.js, JWT Authentication, Webhook Integrations, middleware design
 - **PHP**: Laravel (API-only design, custom service layers), Full-stack Laravel (Blade templates), Vanilla PHP
-- **Python**: Django (API-only REST frameworks), Full-stack Django (MVT Templates), Flask API-only design, Vanilla Python
+- **Python**: Django (API-only REST frameworks), Full-stack Django (MVT Templates), Flask API-only design, SQLModel ORM, Vanilla Python
 - **APIs**: RESTful API design, API orchestration, secure third-party integrations (HubSpot, Google Workspace, Stripe)
 
 ## Databases & Storage
-- **Relational Databases**: PostgreSQL, SQL, SQLite
+- **Relational Databases**: PostgreSQL, SQL, SQLite, SQLModel ORM
 - **NoSQL Databases**: MongoDB (Atlas), Mongoose ODM, Firebase Firestore, Firebase Realtime Database
 - **Backend-as-a-Service (BaaS)**: Supabase, Firebase (Authentication, Firestore, Storage, Cloud Functions)
 
