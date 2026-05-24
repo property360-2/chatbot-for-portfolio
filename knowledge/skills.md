@@ -2,6 +2,7 @@
 Purpose: Defines the technical skills, frameworks, backend environments, and tools used by Jun Alvior.
 What it contains: Detailed lists of frontend frameworks, styles, animation libraries, databases, backends, and deployment tools.
 How it fits into the broader system: Loaded by the serverless function to supply contextual technical capability evidence to the LLM agent.
+asd
 -->
 
 # Skills
