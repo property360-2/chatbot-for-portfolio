@@ -91,3 +91,12 @@ An immersive, interactive space exploration educational platform.
 - **Problem Resolved (Pain Fixed)**: Sluggish, CPU-heavy rendering and unoptimized asset delivery on educational web interactives.
 - **Details**: Combines fluid procedural SVG paths with CSS-only animations to achieve flawless performance on low-end mobile hardware.
 - **Tech Stack**: Astro, HTML, SVG paths, CSS-only animations.
+
+---
+
+## 12. GateKeeper: IoT RFID Membership Management System (IoT & Fullstack)
+An enterprise-grade RFID-based physical access control and membership tracking system integrating hardware, database events, and real-time cloud communications.
+- **Problem Resolved (Pain Fixed)**: Manual attendance logging, membership abuse/sharing, lack of real-time monitoring for staff, and customer entry lockouts during network outages.
+- **Details**: Developed custom ESP32 scanner firmware integrating an MFRC522 RFID reader over SPI. Programmed real-time HTTPS validation requests to Supabase (using a PostgreSQL stored procedure/RPC `validate_scan` that verifies membership status, determines entry/exit logging, and returns JSON summaries). Designed a non-blocking LittleFS offline queue on the ESP32 that buffers UIDs locally during WiFi disconnects and auto-syncs when online, preventing member lockouts. Integrated local WebSockets on the ESP32 to broadcast card taps to staff in real-time, coupled with an admin-authenticated portal. Built n8n cloud automation flows to handle daily membership expirations and route invalid scan alerts directly to a Telegram bot.
+- **Tech Stack**: ESP32, C/C++ (Arduino IDE), Supabase (PostgreSQL RPC & RLS), n8n Cloud, Telegram Bot API, HTML5, Vanilla CSS/JS, WebSockets, LittleFS, Vercel, Git.
+

@@ -18,17 +18,23 @@ asd
 - **Node.js**: Node.js, Express.js, JWT Authentication, Webhook Integrations, middleware design
 - **PHP**: Laravel (API-only design, custom service layers), Full-stack Laravel (Blade templates), Vanilla PHP
 - **Python**: Django (API-only REST frameworks), Full-stack Django (MVT Templates), Flask API-only design, SQLModel ORM, Vanilla Python
-- **APIs**: RESTful API design, API orchestration, secure third-party integrations (HubSpot, Google Workspace, Stripe)
+- **APIs & Protocols**: RESTful API design, API orchestration, WebSockets (real-time communication), secure third-party integrations (HubSpot, Google Workspace, Stripe)
 
 ## Databases & Storage
-- **Relational Databases**: PostgreSQL, SQL, SQLite, SQLModel ORM
+- **Relational Databases**: PostgreSQL (stored procedures, functions/RPC, views), SQL, SQLite, SQLModel ORM
 - **NoSQL Databases**: MongoDB (Atlas), Mongoose ODM, Firebase Firestore, Firebase Realtime Database
-- **Backend-as-a-Service (BaaS)**: Supabase, Firebase (Authentication, Firestore, Storage, Cloud Functions)
+- **Backend-as-a-Service (BaaS)**: Supabase (Auth, RLS Policies, Database, Stored Procedures/RPC), Firebase (Authentication, Firestore, Storage, Cloud Functions)
+- **Local Embedded Storage**: LittleFS (ESP32 flash file system for offline buffering)
 
 ## Cloud & Automation
 - **Amazon Web Services (AWS)**: AWS Lambda (serverless microservices), AWS EC2 (VPC, cloud servers), AWS S3 (durable object storage)
 - **Serverless Hosting**: Vercel Serverless Functions, Netlify
-- **Automation Pipelines**: RAG (Retrieval-Augmented Generation) AI architecture pipelines, custom Google Sheets database sync, CRM pipelines (HubSpot, Salesforce)
+- **Automation Pipelines**: n8n Cloud (workflow automation, webhooks, alerting), Telegram Bot API, RAG (Retrieval-Augmented Generation) AI architecture pipelines, custom Google Sheets database sync, CRM pipelines (HubSpot, Salesforce)
+
+## IoT & Hardware Integration
+- **Microcontrollers & Platforms**: ESP32, Arduino IDE, C/C++ programming for firmware
+- **Peripherals & Protocols**: MFRC522 RFID Reader, SPI (Serial Peripheral Interface), I2C, UART communications
+- **Networking & Services**: WiFiManager (captive portal setup), NTP time synchronization, HTTP client API integrations, WebSockets (local real-time servers on microcontrollers)
 
 ## Dev Tools & Workflow
 - **Development Tools**: Git, GitHub, Vite, Webpack, NPM, Yarn
