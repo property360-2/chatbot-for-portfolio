@@ -66,3 +66,13 @@ A fully integrated administration and dashboard analytics portal designed to man
 - **Details**: Built a secure, database-driven portal that tracks user metrics and performance. Applicable for fitness businesses, personal trainers, or rehab clinics looking to digitize client progress and eliminate paperwork.
 - **Tech Stack**: Django (Python), PostgreSQL, React, Tailwind CSS.
 - **GitHub**: https://github.com/property360-2/vibe
+
+---
+
+## 8. Local-First School Attendance Management System (IoT & Fullstack)
+A robust local-first network attendance monitoring scanner designed for locations with unstable internet connections.
+- **Problem Resolved (Pain Fixed)**: Hardware scanning system failures during WAN outages and high cloud API database sync latencies.
+- **Details**: Built an ESP32 firmware reader that captures RFID taps, validates student state, and communicates directly with a local Express.js PC server. Attendance logs are stored locally using better-sqlite3 databases to bypass external dependency networks. Integrates an active SSD1306 OLED screen display, buzzer validation signals, and JWT-authenticated administrator endpoints.
+- **Tech Stack**: ESP32, C/C++ (Arduino IDE), Express.js, Better-SQLite3, WebSockets, OLED, Buzzers, JWT.
+- **GitHub**: https://github.com/property360-2/attendance-management-system-school
+
