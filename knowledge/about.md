@@ -10,7 +10,7 @@ Dionisio "Jun" Alvior is a Full Stack Software Developer and Systems Architect b
 
 Having spent years in labor and construction, Jun doesn't look at software as just code—he looks at it as a tool that needs to be durable, functional, and built on a solid foundation. He brings that same blue-collar work ethic, discipline, and practical problem-solving to software engineering. Rather than just writing lines of code, he designs and builds complete, durable systems designed to solve operational bottlenecks and eliminate manual effort.
 
-Currently, at Richwell Colleges Incorporated, Jun leads full-stack development, managing database schema design, system architecture, automated testing pipelines, and post-deployment stability.
+Currently, as a Full Stack Developer Intern at Richwell Colleges Incorporated, Jun leads full-stack development, managing database schema design, system architecture, automated testing pipelines, and post-deployment stability.
 
 ## Contact Info & Channels
 - **Email**: junalvior.dev@gmail.com
@@ -22,7 +22,7 @@ Currently, at Richwell Colleges Incorporated, Jun leads full-stack development, 
 
 ## Professional Journey
 
-### Full Stack Software Developer (Richwell Colleges Incorporated) (Present)
+### Full Stack Developer Intern (Richwell Colleges Incorporated) (Internship - Present)
 - Lead developer managing the complete software lifecycle: database schema design, backend systems, APIs, and responsive frontends.
 - Architecting database schemas, data flows, and systems architecture.
 - Implementing CI/CD automated testing pipelines and ensuring post-deployment stability.
