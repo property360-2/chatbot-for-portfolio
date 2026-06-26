@@ -2,8 +2,8 @@
  * @file api/chat.js
  * @description Secure serverless backend handler for the developer portfolio chatbot.
  * Coordinates CORS authentication, dynamically loads local markdown knowledge base documents,
- * establishes LLM assistant rules/prompts, and handles multi-model fallback queries to the Groq API.
- * Fits into the system as the central backend proxy deployed on Vercel to securely call Groq without
+ * establishes LLM assistant rules/prompts, and handles multi-model fallback queries to the Gemini and Groq APIs.
+ * Fits into the system as the central backend proxy deployed on Vercel to securely call AI endpoints without
  * exposing private API keys to static clients.
  *
  * Designed in compliance with project style rules.
@@ -106,47 +106,77 @@ PORTFOLIO KNOWLEDGE BASE:
 ${PORTFOLIO_KNOWLEDGE}
 `.trim();
 
-// ─── GROQ API ────────────────────────────────────────────────────────────────
+// ─── LLM CHAT COMPLETION PROVIDERS ──────────────────────────────────────────
 // Tries models in order. Falls back to the next if one fails or is rate-limited.
+// Configured to primarily use Gemini 3.0 Flash and fallback to Groq models.
 
 const MODEL_FALLBACKS = [
-  "llama-3.1-8b-instant",  // fastest, great for chat
-  "llama3-8b-8192",        // fallback
-  "gemma2-9b-it",          // last resort
+  "gemini-3.0-flash",      // primary model (Gemini API)
+  "gemini-2.5-flash",      // fallback Gemini model
+  "llama-3.1-8b-instant",  // Groq fallback (fast, great for chat)
+  "llama3-8b-8192",        // Groq fallback
 ];
 
 /**
- * Executes an HTTP POST request to the external Groq chat completion API endpoint.
- * Uses native fetch to securely submit conversational system and chat messages, passing the Groq API Key
- * in the Authorization headers. Sets deterministic parameters like low temperature (0.3) to minimize
- * factual hallucination.
+ * Routes and executes an HTTP POST request to either Google's Gemini API or the Groq API
+ * depending on the prefix of the selected model. Uses the OpenAI-compatible endpoint for Gemini.
+ * Sets deterministic parameters like low temperature (0.3) to minimize factual hallucinations.
  *
- * @param {string} model - The identifier of the specific Groq LLM model to query (e.g. 'llama-3.1-8b-instant').
+ * @param {string} model - The identifier of the specific LLM model to query (e.g. 'gemini-3.0-flash' or 'llama-3.1-8b-instant').
  * @param {Array<{role: string, content: string}>} messages - The structured array of conversation turns.
- * @returns {Promise<any>} A promise resolving to the parsed JSON response body from the Groq API.
+ * @returns {Promise<any>} A promise resolving to the parsed JSON response body from the LLM provider API.
  * @throws {Error} Throws an explicit error containing response statuses and body text if the request fails.
  */
-async function callGroq(model, messages) {
-  const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      temperature: 0.3,   // low = more factual, less creative
-      max_tokens: 512,
-      messages,
-    }),
-  });
+async function callLLM(model, messages) {
+  if (model.startsWith("gemini-")) {
+    if (!process.env.GEMINI_API_KEY) {
+      throw new Error("GEMINI_API_KEY environment variable is not set.");
+    }
+    const response = await fetch("https://generativelanguage.googleapis.com/v1beta/openai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.GEMINI_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model,
+        temperature: 0.3,   // low = more factual, less creative
+        max_tokens: 512,
+        messages,
+      }),
+    });
 
-  if (!response.ok) {
-    const err = await response.text();
-    throw new Error(`Groq [${model}] ${response.status}: ${err}`);
+    if (!response.ok) {
+      const err = await response.text();
+      throw new Error(`Gemini [${model}] ${response.status}: ${err}`);
+    }
+
+    return response.json();
+  } else {
+    if (!process.env.GROQ_API_KEY) {
+      throw new Error("GROQ_API_KEY environment variable is not set.");
+    }
+    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model,
+        temperature: 0.3,   // low = more factual, less creative
+        max_tokens: 512,
+        messages,
+      }),
+    });
+
+    if (!response.ok) {
+      const err = await response.text();
+      throw new Error(`Groq [${model}] ${response.status}: ${err}`);
+    }
+
+    return response.json();
   }
-
-  return response.json();
 }
 
 // ─── CONVERSATION HISTORY ────────────────────────────────────────────────────
@@ -216,7 +246,7 @@ export default async function handler(req, res) {
 
   for (const model of MODEL_FALLBACKS) {
     try {
-      const data = await callGroq(model, [
+      const data = await callLLM(model, [
         { role: "system", content: SYSTEM_PROMPT },
         ...conversationMessages,
       ]);
@@ -234,7 +264,7 @@ export default async function handler(req, res) {
   }
 
   return res.status(500).json({
-    error: "All Groq models failed. Please try again later.",
+    error: "All LLM models failed. Please try again later.",
     details: String(lastError?.message ?? lastError),
   });
 }
