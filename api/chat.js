@@ -111,8 +111,7 @@ ${PORTFOLIO_KNOWLEDGE}
 // Configured to primarily use Gemini 3.0 Flash and fallback to Groq models.
 
 const MODEL_FALLBACKS = [
-  "gemini-3.0-flash",      // primary model (Gemini API)
-  "gemini-2.5-flash",      // fallback Gemini model
+  "gemini-2.5-flash",      // primary model (Gemini API)
   "llama-3.1-8b-instant",  // Groq fallback (fast, great for chat)
   "llama3-8b-8192",        // Groq fallback
 ];

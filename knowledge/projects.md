@@ -51,7 +51,7 @@ An autonomous, multi-source lead acquisition pipeline and operations control das
 
 ---
 
-## 6. Intelligent Knowledge Base & Document Automation (DocuMind AI) (Fullstack)
+## 6. Intelligent Knowledge Base & Document Automation (Tropang AI) (Fullstack)
 An intelligent AI-powered document parsing agent and operations dashboard that turns dense business documents into a searchable, interactive knowledge base.
 - **Problem Resolved (Pain Fixed)**: High amount of manual hours spent reading long, dense PDFs and technical documents, and manual data extraction from invoices.
 - **Details**: Integrated Artificial Intelligence to turn dense company PDFs, manuals, and documents into a searchable "Internal Brain" using RAG (Retrieval-Augmented Generation) architectures. Features hybrid BM25 and vector search, LangChain routing, and failover model switching (Llama 3.1, Mixtral, Gemma).
