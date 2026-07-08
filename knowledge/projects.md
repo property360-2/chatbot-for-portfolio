@@ -7,10 +7,10 @@ How it fits into the broader system: Read at startup by the backend and fed to t
 # Projects
 
 ## 1. Automation Pick-up Service (Fullstack)
-A comprehensive scheduling and operational workflow automation pipeline that coordinates real-time tasks, automates communication triggers, and syncs business calendars and databases automatically.
-- **Problem Resolved (Pain Fixed)**: Manual spreadsheet tracking, stock sync delays, repetitive manual email follow-ups, date scheduling conflicts, and operational drag.
-- **Details**: Replaced slow, error-prone manual spreadsheets with a high-performance inventory system. Reduced administrative overhead by 90% via automated Google Sheets synchronization and real-time email notifications.
-- **Tech Stack**: Firebase, HubSpot API, Google Calendar API integrations, Node.js.
+A high-performance inventory automation system that replaces manual spreadsheet tracking with real-time Google Sheets synchronization, automated email notifications, and an interactive React dashboard.
+- **Problem Resolved (Pain Fixed)**: Manual spreadsheet tracking, stock sync delays, repetitive manual email follow-ups, and operational drag.
+- **Details**: Built a responsive React + Vite frontend with Tailwind CSS 4 and Framer Motion animations. Backend powered by Express.js with Google Sheets API integration for live inventory sync. Automated email notifications via Nodemailer/Resend. Deployed on Vercel Serverless Functions. Reduced administrative overhead by 90%.
+- **Tech Stack**: React, Vite, Tailwind CSS 4, Framer Motion, Node.js, Express.js, Google Sheets API, Nodemailer/Resend, Vercel Serverless Functions.
 - **GitHub**: https://github.com/property360-2/automation-pick-up-service
 
 ---
@@ -27,17 +27,17 @@ An enterprise-grade RFID-based physical access control and membership tracking s
 ## 3. Academic Compliance & Audit Portal (OJT Daily Journal) (Tools & Fullstack)
 A streamlined student log tracking and coordinator audit platform designed to track daily journals and student hours.
 - **Problem Resolved (Pain Fixed)**: Messy paper log sheets, lost physical documents, and slow manual auditing processes for coordinators.
-- **Details**: Streamlined student log tracking and coordinator audits. Replaced physical paper log sheets with a secure, tamper-proof digital system, saving advisors 80% of their manual auditing hours. Engineered a native mailto reminder engine that compiles pre-formatted email drafts of missed schedules to students client-side.
-- **Tech Stack**: HTML, CSS, JavaScript (Frontend-based standalone auditing tool with local persistence), Firebase Auth, Cloud Firestore, GitHub Pages.
+- **Details**: Streamlined student log tracking and coordinator audits. Replaced physical paper log sheets with a secure, tamper-proof digital system, saving advisors 80% of their manual auditing hours. Engineered a native mailto reminder engine that compiles pre-formatted email drafts of missed schedules to students client-side. Hosted on GitHub Pages with zero server costs.
+- **Tech Stack**: JavaScript (ES6+), Firebase Auth, Cloud Firestore, GitHub Pages, Tailwind CSS.
 - **GitHub**: https://github.com/property360-2/ojt-journals
 
 ---
 
 ## 4. tagForge: Enterprise AI SEO & Metadata Suite (Fullstack)
-A full-stack, enterprise-grade application for SEO generation and metadata synthesis.
+A full-stack, enterprise-grade application for AI-powered SEO metadata generation and synthesis.
 - **Problem Resolved (Pain Fixed)**: High hosting costs, manual metadata synthesis, API limits, and complex CORS/OAuth configurations.
-- **Details**: Consolidated a full-stack Next.js and Express.js system under a single domain rewrite to bypass CORS and eliminate server costs. Integrated high-throughput Groq Llama-3 endpoints to deliver sub-second metadata syntheses under a secure Stripe subscription tier.
-- **Tech Stack**: Next.js, Express.js, Groq API (Llama-3), Stripe, CORS rewrites.
+- **Details**: Built with Next.js 14 (App Router) and TypeScript. Consolidated frontend and Express.js backend under a single domain rewrite to bypass CORS and eliminate server costs. Integrated high-throughput Groq Llama-3-70B endpoints to deliver sub-second metadata syntheses. User authentication via NextAuth.js, data persistence in MongoDB Atlas, and secure Stripe subscription billing.
+- **Tech Stack**: Next.js 14 (App Router), TypeScript, Express.js, Groq Llama-3-70B, NextAuth.js, MongoDB Atlas, Stripe, Tailwind CSS.
 - **GitHub**: https://github.com/property360-2/seo-project
 
 ---
@@ -54,8 +54,8 @@ An autonomous, multi-source lead acquisition pipeline and operations control das
 ## 6. Intelligent Knowledge Base & Document Automation (Tropang AI) (Fullstack)
 An intelligent AI-powered document parsing agent and operations dashboard that turns dense business documents into a searchable, interactive knowledge base.
 - **Problem Resolved (Pain Fixed)**: High amount of manual hours spent reading long, dense PDFs and technical documents, and manual data extraction from invoices.
-- **Details**: Integrated Artificial Intelligence to turn dense company PDFs, manuals, and documents into a searchable "Internal Brain" using RAG (Retrieval-Augmented Generation) architectures. Features hybrid BM25 and vector search, LangChain routing, and failover model switching (Llama 3.1, Mixtral, Gemma).
-- **Tech Stack**: React, Next.js 15, Node.js, LangChain, Firebase, RAG architecture, vector search, custom secure databases.
+- **Details**: Integrated Artificial Intelligence to turn dense company PDFs, manuals, and documents into a searchable "Internal Brain" using RAG architecture. Features hybrid BM25 ranking + vector search for high-accuracy retrieval, LangChain routing for document processing, and high-speed Groq inference. Built with Next.js 15 and Tailwind CSS 4 with Framer Motion animations. Backend powered by Firebase and Node.js with the Gemini API for AI document analysis.
+- **Tech Stack**: Next.js 15, React, Node.js, Tailwind CSS 4, Framer Motion, Firebase, Gemini API, Groq, LangChain, BM25 hybrid search, RAG architecture.
 - **GitHub**: https://github.com/property360-2/quick-portfolio
 
 ---
@@ -63,8 +63,8 @@ An intelligent AI-powered document parsing agent and operations dashboard that t
 ## 7. Fitness CRM & Client Metrics Dashboard (Gym Project) (Fullstack)
 A fully integrated administration and dashboard analytics portal designed to manage memberships, track attendance, and provide detailed operational overhead breakdowns.
 - **Problem Resolved (Pain Fixed)**: Leaked subscription revenue, slow member check-ins, untracked customer logs, and scattered spreadsheet errors.
-- **Details**: Built a secure, database-driven portal that tracks user metrics and performance. Applicable for fitness businesses, personal trainers, or rehab clinics looking to digitize client progress and eliminate paperwork.
-- **Tech Stack**: Django (Python), PostgreSQL, React, Tailwind CSS.
+- **Details**: Built a secure, database-driven portal powered by Django (Python) and PostgreSQL. Features interactive dashboards with Chart.js data visualizations for membership trends, attendance tracking, and revenue analytics. Frontend styled with Bootstrap for a clean, responsive admin interface.
+- **Tech Stack**: Django (Python), PostgreSQL, Bootstrap, Chart.js.
 - **GitHub**: https://github.com/property360-2/vibe
 
 ---
@@ -75,4 +75,23 @@ A robust local-first network attendance monitoring scanner designed for location
 - **Details**: Built an ESP32 firmware reader that captures RFID taps, validates student state, and communicates directly with a local Express.js PC server. Attendance logs are stored locally using better-sqlite3 databases to bypass external dependency networks. Integrates an active SSD1306 OLED screen display, buzzer validation signals, and JWT-authenticated administrator endpoints.
 - **Tech Stack**: ESP32, C/C++ (Arduino IDE), Express.js, Better-SQLite3, WebSockets, OLED, Buzzers, JWT.
 - **GitHub**: https://github.com/property360-2/attendance-management-system-school
+
+---
+
+## 9. Ano Pong Ulam? Heirloom Recipe Sharing PWA (Fullstack)
+A feature-rich Progressive Web App for preserving Filipino heirloom recipes with offline-first capabilities, social feed, and meal planning.
+- **Problem Resolved (Pain Fixed)**: Loss of offline recipe drafts, slow load times, and fragmented community review feeds.
+- **Details**: Engineered a full-stack PWA built with Next.js 15 (App Router) and Prisma ORM on PostgreSQL (Supabase). Features a multi-step recipe draft wizard with localStorage auto-save guaranteeing zero draft loss on accidental page closes. Custom Service Worker cache logic minimized layout shifting and static asset payloads by 85%. Includes drag-and-drop meal planning calendar, consolidated social feed, and NextAuth.js v5 authentication. Recipe images stored in Supabase Storage buckets.
+- **Tech Stack**: Next.js 15 (App Router), Tailwind CSS v4, Prisma, PostgreSQL (Supabase), NextAuth.js v5, Service Worker Cache / PWA, Supabase Storage.
+- **GitHub**: https://github.com/property360-2/ano-pong-ulam
+- **Live Demo**: https://ano-pong-ulam.vercel.app/
+
+---
+
+## 10. Tagawasak ng Syudad (City Destroyer) (GameDev)
+A chaotic sandbox city destruction game built with Three.js and Web Audio API, demonstrating extreme browser rendering optimization.
+- **Problem Resolved (Pain Fixed)**: Heavy, sluggish visual code and unoptimized audio engines in web games. Traditional 3D web apps rely on massive pre-baked animation files — this project uses pure procedural math.
+- **Details**: An interactive 3D city-destroyer sandbox running at a locked 60FPS. Buildings are composed of individual entities reacting to physics-based impacts and explosions. Arsenal includes Bombs, Asteroid Strikes, Fire, Kaiju Monsters, and Atomic Nukes. Custom Web Audio API implementation generates unique destruction sounds in real-time without external audio files.
+- **Tech Stack**: Three.js, JavaScript, Web Audio API, GameDev.
+- **GitHub**: https://github.com/property360-2/quick-portfolio
 

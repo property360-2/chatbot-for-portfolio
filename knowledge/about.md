@@ -39,9 +39,9 @@ Currently, as a Full Stack Developer Intern at Richwell Colleges Incorporated, J
 
 ## Core Competencies
 
-- **Engineering Grit**: Transitioned from construction labor to software engineering, bringing a disciplined work ethic, focus on structural durability, and a clean-slate approach to software architecture.
-- **Full-Cycle System Architecture**: Experienced in designing relational databases, building secure backends, and structuring modular frontend applications.
-- **Relational & BaaS Integrations**: Deep familiarity with PostgreSQL, Django, Supabase, Firebase, and integrating real-time databases with API networks.
-- **Workflow Automation**: Connects APIs, webhooks, databases, and LLM models using tools like n8n and Python scripts to eliminate administrative overhead.
-- **User-Centric & Accessible UX**: Ensures all applications adhere to web accessibility standards (W3C A11y & Semantic HTML/ARIA) with a premium visual presentation.
-- **Technical Scoping**: Leverages recruitment associate background to translate business requirements into highly accurate sprint scopes and technical plans.
+- **Collaboration & Leadership**: Proven experience leading development teams and managing school-wide portals during OJT. Skilled in sprint planning and clear communication.
+- **Analytical Problem Solving**: Developed a solution-oriented mindset through varied labor roles and complex software debugging. Fixes root causes, not just symptoms.
+- **System Architecture**: Extensive experience designing full-cycle applications, from relational database schemas to responsive frontend state management.
+- **User-Centric UX/UI**: Focusing on intuitive interfaces and accessibility by constantly refining designs based on real-world client and user feedback.
+- **Adaptability & Growth**: Transitioned from construction labor to software engineering, bringing a strong work ethic and the ability to learn new paradigms rapidly.
+- **Technical Communication**: Skilled at translating complex technical requirements into business value, honed during time as a recruitment associate.
