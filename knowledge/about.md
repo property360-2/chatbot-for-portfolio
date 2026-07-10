@@ -6,7 +6,7 @@ How it fits into the broader system: Read at cold start by the backend's knowled
 
 # About
 
-Dionisio "Jun" Alvior is a Full Stack Software Developer and Systems Architect based in Manila, Philippines.
+Dionisio "Jun" Alvior is a Full Stack Software Developer and Systems Architect based in Ligas, Malolos, Bulacan, Philippines.
 
 Having spent years in labor and construction, Jun doesn't look at software as just code—he looks at it as a tool that needs to be durable, functional, and built on a solid foundation. He brings that same blue-collar work ethic, discipline, and practical problem-solving to software engineering. Rather than just writing lines of code, he designs and builds complete, durable systems designed to solve operational bottlenecks and eliminate manual effort.
 

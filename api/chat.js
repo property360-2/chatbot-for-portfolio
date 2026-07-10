@@ -108,10 +108,10 @@ ${PORTFOLIO_KNOWLEDGE}
 
 // ─── LLM CHAT COMPLETION PROVIDERS ──────────────────────────────────────────
 // Tries models in order. Falls back to the next if one fails or is rate-limited.
-// Configured to primarily use Gemini 3.0 Flash and fallback to Groq models.
+// Configured to primarily use Gemini 2.5 Flash and fallback to Groq models.
 
 const MODEL_FALLBACKS = [
-  "gemini-2.5-flash",      // primary model (Gemini API)
+  "gemini-3.0-flash",      // primary model (Gemini API)
   "llama-3.1-8b-instant",  // Groq fallback (fast, great for chat)
   "llama3-8b-8192",        // Groq fallback
 ];

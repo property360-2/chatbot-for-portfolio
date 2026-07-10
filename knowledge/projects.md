@@ -95,3 +95,43 @@ A chaotic sandbox city destruction game built with Three.js and Web Audio API, d
 - **Tech Stack**: Three.js, JavaScript, Web Audio API, GameDev.
 - **GitHub**: https://github.com/property360-2/quick-portfolio
 
+---
+
+## 11. Mind Map Maker (Productivity Tool)
+An intuitive and robust web application for creating mind maps with interactive canvas, asynchronous localStorage persistence, and zero-friction offline-first brainstorming.
+- **Problem Resolved (Pain Fixed)**: Complex paid brainstorming tools requiring accounts and slow database sync that disrupt creative flow.
+- **Details**: Built a lightweight brainstorming canvas where users can create, drag, and organize nodes interactively. Data is saved asynchronously to localStorage for instant, private, offline-capable sessions. Includes export/import functionality for portable mind maps.
+- **Tech Stack**: JavaScript, HTML5 Canvas, localStorage, PWA.
+- **GitHub**: https://github.com/property360-2/mind-map/tree/demo-preview
+- **Live Demo**: https://property360-2.github.io/mind-map/
+
+---
+
+## 12. Precision Scrollytelling Gallery (Fullstack)
+An immersive web experience with scroll-driven video assembly sequences and a premium interactive gallery built with Next.js 15 and Framer Motion.
+- **Problem Resolved (Pain Fixed)**: Product showcases struggle to explain complex mechanical assemblies through static images or non-interactive videos.
+- **Details**: Synchronizes video playback precisely to scroll position for buttery-smooth "scrubbing" through complex assembly steps. Features a dynamic gallery with category filtering, interactive video hover states, and automatic page generation per video experience. Glassmorphic UI with staggered entrance animations.
+- **Tech Stack**: Next.js 15 (App Router), TypeScript, Framer Motion, Vanilla CSS.
+- **GitHub**: https://github.com/property360-2/next-js-on-scroll-animation
+- **Live Demo**: https://next-js-on-scroll-animation.vercel.app/
+
+---
+
+## 13. Solar System — Interactive SVG Experience (Interactive 3D / EdTech)
+An immersive, high-fidelity web experience exploring the solar system with procedural SVG art, fluid motion design, and a responsive deep-dive system.
+- **Problem Resolved (Pain Fixed)**: Traditional educational content is static and uninspiring, causing low engagement and weak retention.
+- **Details**: Delivers a museum-grade educational experience with data-driven procedural SVG illustrations (including Saturn's rings with atmospheric glows), a deep-dive side drawer revealing planetary internal layer compositions, a multi-layered parallax starfield on HTML5 Canvas, and fluid motion timelines powered by Anime.js.
+- **Tech Stack**: SVG Art, JavaScript, HTML5 Canvas, Anime.js, PWA.
+- **GitHub**: https://github.com/property360-2/planets-blog
+- **Live Demo**: https://property360-2.github.io/planets-blog/
+
+---
+
+## 14. Time-Tracking & Resource Allocation Tool (Study Tracker) (Fullstack)
+A high-response time-tracking and resource allocation system designed to log, aggregate, and visualize focus metrics for personal study or billable client work.
+- **Problem Resolved (Pain Fixed)**: Service businesses and freelancers lose revenue from untracked minutes, poor time auditing, and administrative friction in resource allocation.
+- **Details**: Logs session start/end times, visualizes daily/weekly progress statistics, and supports goal setting. Architecture adapts from academic tracking to consultant/agency billable hour tracking with clean progress reports.
+- **Tech Stack**: Django (Python), PostgreSQL, Chart.js, Render.
+- **GitHub**: https://github.com/property360-2/kay-jm
+- **Live Demo**: https://simple-study-time-tracker.onrender.com/journal/
+
