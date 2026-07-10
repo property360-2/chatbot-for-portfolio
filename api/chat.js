@@ -111,9 +111,9 @@ ${PORTFOLIO_KNOWLEDGE}
 // Configured to primarily use Gemini 2.5 Flash and fallback to Groq models.
 
 const MODEL_FALLBACKS = [
-  "gemini-3.0-flash",      // primary model (Gemini API)
-  "llama-3.1-8b-instant",  // Groq fallback (fast, great for chat)
-  "llama3-8b-8192",        // Groq fallback
+  "gemini-2.5-flash",        // primary model (Gemini API)
+  "llama-3.1-8b-instant",    // Groq fallback (fast, great for chat)
+  "gemma2-9b-it",            // Groq fallback
 ];
 
 /**
@@ -121,7 +121,7 @@ const MODEL_FALLBACKS = [
  * depending on the prefix of the selected model. Uses the OpenAI-compatible endpoint for Gemini.
  * Sets deterministic parameters like low temperature (0.3) to minimize factual hallucinations.
  *
- * @param {string} model - The identifier of the specific LLM model to query (e.g. 'gemini-3.0-flash' or 'llama-3.1-8b-instant').
+ * @param {string} model - The identifier of the specific LLM model to query (e.g. 'gemini-2.5-flash' or 'llama-3.1-8b-instant').
  * @param {Array<{role: string, content: string}>} messages - The structured array of conversation turns.
  * @returns {Promise<any>} A promise resolving to the parsed JSON response body from the LLM provider API.
  * @throws {Error} Throws an explicit error containing response statuses and body text if the request fails.
