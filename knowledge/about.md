@@ -22,7 +22,7 @@ Currently, as a Full Stack Developer Intern at Richwell Colleges Incorporated, J
 
 ## Professional Journey
 
-### Full Stack Developer Intern (Richwell Colleges Incorporated) (Internship - Present)
+### Full Stack Developer Intern (Richwell Colleges Incorporated) (Oct 2025 - May 2026)
 - Lead developer managing the complete software lifecycle: database schema design, backend systems, APIs, and responsive frontends.
 - Architecting database schemas, data flows, and systems architecture.
 - Implementing CI/CD automated testing pipelines and ensuring post-deployment stability.
