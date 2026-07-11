@@ -66,14 +66,28 @@ A comprehensive analysis of the legal, historical, and geopolitical foundations 
 - **Date**: February 12, 2026
 - **URL**: /quick-portfolio/writings/articles/sovereign-imperatives/
 
-### 10. Book Report: How to Read People Like a Book
+### 10. China's Claims on Palawan and Batanes: Bakit Mas Malakas ang Philippine Position Base sa International Law
+A legal and historical analysis of China's territorial claims on Palawan and Batanes, written in Taglish. Covers treaty-based boundaries, effective control, and why the Philippine position is stronger under international law.
+- **Category**: Geopolitics, International Law, West Philippine Sea, Sovereignty
+- **Date**: July 10, 2026
+- **URL**: /quick-portfolio/writings/articles/chinas-claims-on-palawan-and-batanes/
+
+### 11. Book Report: How to Read People Like a Book
 A deep dive into understanding human behavior, motivation, and non-verbal communication.
 - **Category**: Psychology, Human Behavior, Book Report
 - **Date**: February 6, 2026
 - **URL**: /quick-portfolio/writings/articles/how-to-read-people/
 
-### 11. Book Report: Ikigai: The Japanese Secret to a Long and Happy Life
+## Blogs
+
+### 12. Book Report: Ikigai: The Japanese Secret to a Long and Happy Life
 A personal reflection on finding purpose, flow states, and meaning through the Japanese concept of ikigai.
 - **Category**: Book Report, Personal Development, Philosophy
 - **Date**: July 10, 2026
 - **URL**: /quick-portfolio/writings/articles/ikigai-book-report/
+
+### 13. The Solar System
+Exploring the intersection of educational technology and interactive 3D graphics in the Solar System portfolio project.
+- **Category**: 3D Graphics, Three.js, Educational Tech
+- **Date**: May 14, 2026
+- **URL**: /quick-portfolio/portfolio/solar-system-showcase/
